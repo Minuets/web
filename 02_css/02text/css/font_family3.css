@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Nanum+Pen+Script&family=Stylish&display=swap');
+
+.w_font1 {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.w_font2 {
+  font-family: "Dongle", sans-serif;
+}
+
+.w_font3 {
+  font-family: "Stylish", sans-serif;
+}

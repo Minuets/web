@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습파일/실험</title>
+  <style>
+    .dot {
+      border: 1px solid;
+      padding: 20px;
+      margin: 20px;
+    }
+    table, th, td {
+      border: 1px solid #b7b7b7;
+      border-collapse: initial;
+      padding: 4px;
+      margin-left: 300px;
+      margin-top: 400px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>큰항목</th>
+      <th>큰항목</th>
+      <th>큰항목</th>
+    </tr>
+    <tr>
+      <th>큰항목</th>
+      <td><a href="../07a/a01.html">하이퍼링크1</a></td>
+      <td rowspan="2">항목<hr>항목</td>
+    </tr>
+    <tr>
+      <th>큰항목</th>
+      <td><a href="../07a/a02.html">하이퍼링크2</a></td>
+    </tr>
+  </table>
+  <br><br><br><br><br><br><br><br>
+
+
+
+  <table class="dot">
+    <tr>
+      <td class="dot" rowspan="2"><a href="./a01.html">1번파일</a></td>
+      <td class="dot"><a href="./a02.html">2번파일</a></td>
+    </tr>
+    <tr>
+      <td class="dot">-</td>
+    </tr>
+    <tr>
+      <th class="dot" colspan="2"><a href="../00first/first.html"><img src="../../02_css/kakao.png" alt="카카오"
+            width="50"></a></th>
+    </tr>
+    <!-- <tr>
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+      </ul>
+      <ul>
+        <li><a href="../07a/a01.html">a1</a></li>
+        <li><a href="../07a/a02.html">a2</a></li>
+      </ul>
+    </tr>
+    <tr>
+      <ul>
+        <li><img src="../../02_css/kakao.png" alt="null" width="50"></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </tr> -->
+    <!-- 테이블 태그 안에 리스트는 안들어감 -->
+  </table>
+  <ul>
+    <li>
+      <table class="dot">
+        <tr>
+          <th class="dot">행</th>
+          <td class="dot"><a href="../05table/table01.html">행</a></td>
+        </tr>
+        <tr>
+          <th class="dot">열</th>
+          <td class="dot"><a href="../05table/table02.html">열</a></td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <a href="../01sementic/iframe.html">하이퍼링크1</a>
+    </li>
+    <li>
+      <a href="../01sementic/layout.html">하이퍼링크2</a>
+    </li>
+  </ul>
+  <!-- 리스트 안에 테이블은 가능
+       하이퍼링크는 어디든 달림 -->
+  <!-- <span>
+     <ul>
+    <li>11</li>
+    <li>22</li>
+    </ul>
+  </span>
+  <span>
+    <ul>
+      <li>11</li>
+      <li>22</li>
+    </ul>
+  </span> -->
+  <!-- span: 리스트를 인라인으로 묶을수 없음 -->
+</body>
+
+</html>

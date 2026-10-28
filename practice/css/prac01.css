@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.u1 {
+  list-style: disc inside;
+  margin-left: 200px;
+}
+
+.q1 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 40px;
+}
+
+#a1 {
+  width: 100px;
+  height: 30px;
+}
+
+.p1 {
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #000;
+  width: 400px;
+  height: 100px;
+  white-space: normal;
+  overflow: scroll;
+  /* font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height:  */
+  color: #242323;
+  letter-spacing: 2px;
+  word-spacing: 0.1em;
+  text-shadow: -2px 2px 40px;
+  text-decoration: underline dashed #f00 2px;
+  text-align: center;
+  font: bold 16px 'Noto Sans KR', sans-serif;
+  text-transform: capitalize;
+  /* font 스타일 바리언트 웨이트 스트레츠 사이즈 헤이트 패밀리 */
+}

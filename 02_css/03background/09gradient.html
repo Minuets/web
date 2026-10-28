@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>그라데이션 배경</title>
+  <style>
+    div {
+      width: 500px;
+      height: 500px;
+      margin: 10px;
+    }
+
+    .gr1 {
+      background: linear-gradient(135deg, color-mix(in oklch, #ff8a1e 47%, transparent) 29%, color-mix(in oklch, #ffe2a6 47%, transparent) 100%);
+    }
+
+    .gr2 {
+      background: radial-gradient(circle at 46% 51%, color-mix(in oklch, #474649 65%, transparent) 29%, color-mix(in oklch, #ffe2a6 65%, transparent) 100%);
+    }
+
+    .gr3 {
+      background-color: color-mix(in oklch, #e4a8ff 86%, transparent);
+      background-image:
+        radial-gradient(circle at 46% 51%, color-mix(in oklch, #474649 86%, transparent) 11% 29%, transparent 34%),
+        radial-gradient(circle at 82% 18%, color-mix(in oklch, color-mix(in oklch, #474649 86%, transparent) 48%, white) 0 16%, transparent 32%),
+        radial-gradient(circle at 72% 76%, color-mix(in oklch, #e4a8ff 86%, transparent) 0 18%, transparent 36%),
+        radial-gradient(circle at 24% 82%, color-mix(in oklch, color-mix(in oklch, #e4a8ff 86%, transparent) 55%, black) 0 16%, transparent 34%);
+      background-blend-mode: screen, normal, multiply, normal;
+    }
+
+    .gr4 {
+      background-color: color-mix(in oklch, #e4a8ff 34%, transparent);
+      background-image:
+        radial-gradient(circle at 18% 28%, color-mix(in oklch, color-mix(in oklch, #474649 34%, transparent) 84%, white) 0 18%, transparent 42%),
+        radial-gradient(circle at 76% 18%, color-mix(in oklch, color-mix(in oklch, #e4a8ff 34%, transparent) 76%, white) 0 15%, transparent 38%),
+        radial-gradient(circle at 78% 78%, color-mix(in oklch, color-mix(in oklch, #474649 34%, transparent) 42%, color-mix(in oklch, #e4a8ff 34%, transparent)) 0 20%, transparent 44%),
+        conic-gradient(from 59deg at 46% 52%, color-mix(in oklch, color-mix(in oklch, #474649 34%, transparent) 42%, white), color-mix(in oklch, color-mix(in oklch, #e4a8ff 34%, transparent) 70%, black), color-mix(in oklch, color-mix(in oklch, #474649 34%, transparent) 64%, color-mix(in oklch, #e4a8ff 34%, transparent)), color-mix(in oklch, color-mix(in oklch, #474649 34%, transparent) 42%, white));
+      background-blend-mode: screen, normal, overlay, normal;
+    }
+
+    .gr5 {
+      background:
+        linear-gradient(59deg, color-mix(in oklch, color-mix(in oklch, #474649 34%, transparent) 18%, white), transparent 62%),
+        radial-gradient(ellipse at 20% 30%, color-mix(in oklch, #474649 34%, transparent) 0 18%, transparent 52%),
+        radial-gradient(ellipse at 78% 42%, color-mix(in oklch, #e4a8ff 34%, transparent) 0 20%, transparent 56%),
+        linear-gradient(180deg, color-mix(in oklch, color-mix(in oklch, #e4a8ff 34%, transparent) 38%, white), color-mix(in oklch, color-mix(in oklch, #474649 34%, transparent) 24%, black));
+    }
+
+    .gr6 {
+      background-color: color-mix(in oklch, #e4a8ff 47%, transparent);
+      background-image:
+        linear-gradient(83deg, rgba(255, 255, 255, .88) 0 8%, transparent 18% 28%, rgba(255, 255, 255, .42) 34% 42%, transparent 54% 64%, rgba(255, 255, 255, .78) 72%, transparent 84%),
+        conic-gradient(from 83deg at 52% 48%, color-mix(in oklch, color-mix(in oklch, #474649 47%, transparent) 82%, white), color-mix(in oklch, #061214 47%, transparent), color-mix(in oklch, color-mix(in oklch, #e4a8ff 47%, transparent) 92%, black), color-mix(in oklch, #433e28 47%, transparent), color-mix(in oklch, #474649 47%, transparent)),
+        repeating-linear-gradient(91deg, rgba(255, 255, 255, .18) 0 1px, transparent 1px 6px),
+        linear-gradient(173deg, color-mix(in oklch, color-mix(in oklch, #e4a8ff 47%, transparent) 88%, black), color-mix(in oklch, color-mix(in oklch, #474649 47%, transparent) 44%, white) 50%, color-mix(in oklch, color-mix(in oklch, #e4a8ff 47%, transparent) 86%, black));
+      background-blend-mode: screen, color-dodge, overlay, normal;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="gr1"></div>
+  <div class="gr2"></div>
+  <div class="gr3"></div>
+  <div class="gr4"></div>
+  <div class="gr5"></div>
+  <div class="gr6"></div>
+</body>
+
+</html>

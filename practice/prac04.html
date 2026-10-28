@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <style>
+    *{
+      padding-bottom: 8px;
+    }
+    .a1{
+      align-items: center;
+    }
+    ul{
+      list-style: none;
+    }
+    .a2{
+      align-items: end;
+    }
+   </style>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>개인 정보 입력</legend>
+      <ul>
+        <li>
+          <label>이름 : <input type="text" placeholder="이름을 입력하세요" class="a1"></label>
+        </li>
+        <li>
+          <label>주민번호 : <input type="text" class="a1"></label>
+        </li>
+        <li>
+          <label>아이디 : <input type="text" class="a1"></label>
+        </li>
+        <li>
+          <label>패스워드 : <input type="password" class="a1"></label>
+        </li>
+        <li>
+          <label>성별 : </label>
+          <label class="a1">남<input type="radio" value="male" name="gen"></label>
+          <label class="a1">여<input type="radio" value="female" name="gen"></label>
+        </li>
+        <li>
+          <label>관심사 : </label>
+          <label class="a1">연예<input type="checkbox" value="un1"></label>
+          <label class="a1">스포츠 <input type="checkbox" value="un2"></label>
+          <label class="a1">IT <input type="checkbox" value="un3"></label>
+        </li>
+        <li>
+          <label>내용 : </label>
+          <textarea placeholder="긴 글을 쓸때 사용합니다." cols="30" rows="6" class="a1"></textarea>
+        </li>
+        <li>
+          <label>파일첨부 : </label>
+          <input type="file" value="파일 선택">
+        </li>
+        <li class="a2">
+          <input type="button" value="저장" onclick="alert">
+          <input type="reset" value="초기화">
+        </li>
+
+
+
+
+      </ul>
+    </fieldset>
+  </form>
+</body>
+
+</html>
