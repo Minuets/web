@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>scale</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul {
+      list-style: none;
+      width: 640px;
+      margin: 40px auto 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul li {
+      width: 200px;
+      height: 150px;
+      overflow: hidden;
+    }
+
+    ul li a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    ul li a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: .6s;
+    }
+
+    ul li:hover a img {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="#"><img
+          src="https://i.namu.wiki/i/pjdjDyRLfC7M9vflU0t4rOGvAQ_kbRvFgV7HGS0gB8ZS-eDa50qFIDoNQtCgqLSz_HiSYhikBa6A5BYi2dig2A.webp"
+          alt="변우석"></a></li>
+    <li><a href="#"><img src="https://cdn.hankooki.com/news/photo/202510/290130_405466_1760741410.png" alt="변우석"></a>
+    </li>
+    <li><a href="#"><img
+          src="https://img1.kakaocdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/2fbJ/image/NnLD-6PZ47hikCkXuNfbs88gDtM.jpg"
+          alt="변우석"></a></li>
+  </ul>
+</body>
+
+</html>
