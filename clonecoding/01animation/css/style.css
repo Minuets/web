@@ -216,7 +216,11 @@ section img {
   }
 
   90% {
-    opacity: 0;
+    opacity: 0.4;
+  }
+
+  94% {
+    opacity: 0.8;
   }
 
   100% {
