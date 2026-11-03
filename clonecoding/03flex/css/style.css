@@ -207,11 +207,13 @@ section article .inner figure {
   filter: saturate(10%);
   /* 영상 박스 채도 낮춤 */
   transition: 1s;
+  position: relative;
 }
 
 section article:hover .inner figure {
   filter: saturate(120%);
   height: 25vh;
+  /* right: 30px; */
 }
 
 section article .inner figure video {
