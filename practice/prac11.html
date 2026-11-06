@@ -5,22 +5,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    p.don {
+      color: aqua;
+    }
+  </style>
 </head>
 
 <body>
   <script>
-    let y = 1;
-    for (x = 0; x < 80; x++) {
+    let y = 0;
+/*     for (x = 0; x < 80; x++) {
       y += x;
-      if (y % 5 == 0 && y % 3 == 0 && y % 7 == 0) {
+      if (y % 3 == 0) {
         continue;
       } else if (y % 4 == 0) {
-        for (x; x < 80; x++) {
-          y += x;
-        }
-      } else if (y % 6 != 0) {
+        for (x; x < 5; x++);
+      } else if (y % 5 == 0) {
+        document.write(y);
+      } else { document.write(y + '<br>') }
+    } */
+    for (z = 12; z < 144; z += 12) {
+      y = z;
+      if (y % 24 == 0) {
+        continue;
+      } else if (y % 36 == 0) {
         document.write(y + '<br>');
-      }
+      } else if (y % 60 == 0) {
+        for (z; z < 36;) {
+          z + 12;
+          console.log(z);
+        }
+      } else{ document.write(`<p class='don'>${y}</p>`) }
     }
   </script>
 </body>
