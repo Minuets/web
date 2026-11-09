@@ -10,13 +10,13 @@
     let f = 10 > 20;
     let t = 10 < 20;
     let result;
-    result = f|| f|| f; //or
+    result = f|| f|| f; //or  :  shift + \ = |
     console.log(result);
 
-    result = f|| t|| f;
+    result = f|| t|| f; //하나라도 true라면 값은 true
     console.log(result);
 
-    result = f&& t&& f; //and
+    result = f&& t&& f; //and  하나라도 false라면 값은 false
     console.log(result);
     
     result = t&& t&& t;
