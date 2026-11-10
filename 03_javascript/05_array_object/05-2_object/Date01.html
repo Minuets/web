@@ -25,18 +25,18 @@
     //날짜 정보 출력 함수
     function printInfo(title, dateObj, type) {
       let year = dateObj.getFullYear();
-      let month = dateObj.getMonth() + 1; //0부터 시작함. +1 해줘야됨
+      let month = dateObj.getMonth() + 1; //0부터 시작함. +1 해줘야됨 0월은 없으니..
       let date = dateObj.getDate();
       let day = dateObj.getDay();
       document.write(`<h2>${title}(${type})방식</h2>`);
       document.write(`${year}년 ${month}월 ${date}일 ${dayName(day)}<br>`);
     }
     let basicDate = new Date();
-    printInfo('오늘', basicDate, '아무것도 안넣음');
+    printInfo('오늘', basicDate, '아무것도 안넣음');  //dataObj 값을 안넣어도 자동으로 계산
 
     //시작일 날짜 -> ,방식 (인자 값 넣기)
     let startDate = new Date(2026, 9, 20);
-    printInfo('개강일', startDate, '2026, 9, 20');
+    printInfo('개강일', startDate, '2026, 9, 20');  //넣은 인자값으로 날짜 계산, 그 날의 요일은 switch로 계산됨
 
     //종강일 날짜 '-방식' -> 인자값이 하나인 string 타입
     //new Date('YYYY-MM-DD') -> 입력한 그대로 출력
