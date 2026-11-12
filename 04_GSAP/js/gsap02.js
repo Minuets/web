@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // toFixed(3)  소수점 셋째자리까지 딱 잘라서 보기 좋게 (예: 0.123초)
     const elapsed = ((performance.now() - start_time) / 1000).toFixed(3);
     console.log(`${elapsed} => ${msg}`)
-  }
+  };
 
   //1.add / call / addPause 실험
   const tl1 = gsap.timeline({ paused: true }); //일단 멈춘 상태로 준비
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const openTl = gsap.timeline({ paused: true }).to('.menu', { x: 260, duration: 0.5 });
   openTl.reverse();
   document.getElementById('toggle2').addEventListener('click',()=>{
-    openTl.reversed(!openTl.reversed())
+    openTl.reversed(!openTl.reversed()) //클릭할 때 마다 reversed의 true / false 값이 바뀜
   });
 
 });//end
