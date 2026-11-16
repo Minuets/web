@@ -567,10 +567,6 @@ main .more.border:hover {
   transform: translateY(102px);
 }
 
-.article_bottom .box3 .txt_b {
-  transform: translateY(0);
-}
-
 .article_bottom .box:hover .txt_b {
   transform: translateY(0);
 }
@@ -645,6 +641,10 @@ main .more.border:hover {
   flex: 1;
   background: var(--yul-brand-orange-soft);
   transition: .3s;
+}
+
+.article_bottom .box3 .txt_b {
+  transform: translateY(0);
 }
 
 .article_bottom .box3:hover {
