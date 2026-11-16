@@ -51,10 +51,22 @@ const setPager = () => {
   //realIndex : 0부터 시작함, 화면에 1 더해서 보여줌
   const current = mainSlide.realIndex + 1;
   numEl.textContent = String(current);
-  totalEl.textContent=String(getTotal());
+  totalEl.textContent = String(getTotal());
 }
 //처음 페이지 열렸을때 번호를 한번 적어줌
 setPager();
 
 //슬라이드 바뀔때마다 번호도 다시 바꿈
-mainSlide.on('slideChange',setPager);
+mainSlide.on('slideChange', setPager);
+
+//공지 영역의 세로 슬라이드
+const infoSlide = new Swiper('.article_top .slide .swiper', {
+  direction: 'vertical',
+  //마지막 슬라이드 다음 첫 슬라이드로 이어짐
+  loop: true,
+  //자동으로 다음 슬라이드로 넘어가게
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
