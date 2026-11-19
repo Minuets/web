@@ -23,13 +23,13 @@ window.addEventListener('scroll', () => {
   // console.log(currentScrollY);
 
   //지금 위치가 직전 위치보다 크면 아래로 스크롤 중
-  if (currentScrollY >lastScrollY){
-    header.style.top='-100px'
-  }else{
-    header.style.top=0;
+  if (currentScrollY > lastScrollY) {
+    header.style.top = '-100px'
+  } else {
+    header.style.top = 0;
   }
   //다음 스크롤때 비교할 수 있도록 지금 위치 저장
-  lastScrollY=currentScrollY;
+  lastScrollY = currentScrollY;
 });
 
 
