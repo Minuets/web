@@ -926,7 +926,7 @@ main .more.border:hover {
   border-radius: var(--round);
   padding: 30px;
   box-shadow: var(--yul-brand-shadow2);
-  will-change: transform;
+  will-change: transform; /* transform 적용된다고 미리 알려줌 -> 애니메이션의 동작을 부드럽게 만듦 */
   transition: transform .3s ease;
   background: var(--gray-00);
   overflow: hidden;
@@ -968,7 +968,7 @@ main .more.border:hover {
 
 .contents .swiper .box .img_box {
   width: 100%;
-  aspect-ratio: 384/205;
+  aspect-ratio: 384/205; /* 크기값 x/y고정 */
   height: auto;
   overflow: hidden;
   border-bottom: 1px solid var(--gray-02);
