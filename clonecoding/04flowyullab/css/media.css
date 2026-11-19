@@ -5,6 +5,11 @@
     width: min(1600px, calc(100% - 40px));
   }
 
+  /* 
+  부모너비에서 40px 뺀 값 : 좌우 너비에 20px의 여백을 둠
+  1600px <-> calc  둘 중 작은 값을 씀
+  */
+
   .motion .inner {
     text-align: center;
     justify-content: center;
@@ -134,6 +139,7 @@
     transform: rotate(90deg) scaleY(1.4);
     font-weight: 100;
     width: auto;
+    /* 우측 꺽쇠(>) 호버해도 안움직이게 고정시킴 */
     font-family: var(--font-Eng2);
   }
 
@@ -164,6 +170,7 @@
   .article_bottom {
     height: auto;
     display: block;
+    /* flex 풀어줌 */
     padding-inline: 20px;
   }
 
@@ -188,10 +195,6 @@
 
   .article_bottom .box:hover .txt_b {
     transform: translateY(102px);
-  }
-
-  .article_bottom .box3:hover .txt_b {
-    transform: translateY(0);
   }
 
   .article_bottom .box .txt_b span {
@@ -224,6 +227,10 @@
   .article_bottom .box3 {
     width: calc(50% - 10px);
     float: left;
+  }
+
+  .article_bottom .box3:hover .txt_b {
+    transform: translateY(0);
   }
 
   .article_bottom .box3 img {
@@ -388,21 +395,29 @@
   .curriculum .list_box {
     width: 300px;
   }
-  .contact .inner{
+
+  .contact .inner {
     height: auto;
     flex-direction: column;
     padding-inline: 20px;
   }
 
   .contact .inner article {
-  padding: 32px;
-  flex-basis: 124px;
-}
-.contact .inner article a{
-  background-size: 54px;
-}
-.contact .inner article a h3{font-size: 16px;}
-.contact .inner article a p{font-size: 14px;}
+    padding: 32px;
+    flex-basis: 124px;
+  }
+
+  .contact .inner article a {
+    background-size: 54px;
+  }
+
+  .contact .inner article a h3 {
+    font-size: 16px;
+  }
+
+  .contact .inner article a p {
+    font-size: 14px;
+  }
 
 
 }
