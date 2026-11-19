@@ -926,7 +926,8 @@ main .more.border:hover {
   border-radius: var(--round);
   padding: 30px;
   box-shadow: var(--yul-brand-shadow2);
-  will-change: transform; /* transform 적용된다고 미리 알려줌 -> 애니메이션의 동작을 부드럽게 만듦 */
+  will-change: transform;
+  /* transform 적용된다고 미리 알려줌 -> 애니메이션의 동작을 부드럽게 만듦 */
   transition: transform .3s ease;
   background: var(--gray-00);
   overflow: hidden;
@@ -968,7 +969,8 @@ main .more.border:hover {
 
 .contents .swiper .box .img_box {
   width: 100%;
-  aspect-ratio: 384/205; /* 크기값 x/y고정 */
+  aspect-ratio: 384/205;
+  /* 크기값 x/y고정 */
   height: auto;
   overflow: hidden;
   border-bottom: 1px solid var(--gray-02);
@@ -1177,6 +1179,48 @@ main .more.border:hover {
 
 
 footer {
-  height: 400px;
-  background: #32E0BD;
+  width: 100%;
+  padding: 60px 0 100px;
+  background: var(--gray-09);
+  color: var(--gray-00);
+}
+
+footer .f_top {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .f_top .logo_box {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+footer .f_top .logo_box .logo {
+  font-size: 2.3rem;
+  font-family: var(--font-Eng2);
+  font-weight: 200;
+  letter-spacing: 2px;
+  opacity: .5;
+}
+
+footer .f_top .logo_box .logo_b {
+  display: flex;
+  gap: 50px;
+  font-size: 1.1rem;
+  opacity: .4;
+}
+
+footer .f_top .btn_box {}
+
+footer .f_top .btn_box a,
+footer .f_top  button {}
+
+footer .f_top .btn_box a:hover,
+footer .f_top  button:hover {}
+
+footer .f_bottom {
+  margin-top: 80px;
+  height: 100px;
+  background: #fff;
 }
