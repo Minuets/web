@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           //왼쪽으로 나가서 완전히 사라진 줄은 맨 오른쪽 뒤로 보내줌
           if (dir === -1 && offset <= -rowWidth) {
             offset += rowWidth * rows.length;
-          } else if (dir === 1 && offset <= rowWidth) {
+          } else if (dir === 1 && offset >= rowWidth) {
             //오른쪽으로 나가서 완전히 사라진 줄은 맨 왼쪽 앞으로 보내줌
             offset -= rowWidth * rows.length;
           }
