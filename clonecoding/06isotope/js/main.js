@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
   const btns=document.querySelectorAll('main ul li');
   for(let btn of btns){
     btn.addEventListener('click',e=>{
-      e.preventDefault();
+      e.preventDefault(); //a링크의 페이지 이동하는 요소 비활성화
       //변수 sort에 클릭한 대상의 자식인 a 요소의 href 속성값 저장
       const sort=e.currentTarget.querySelector('a').getAttribute('href');
       // console.log(sort);
