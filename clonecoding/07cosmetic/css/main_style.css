@@ -161,6 +161,7 @@ a.more .plus::after{
 }
 .best_product .right_box ul li:nth-child(2){
   background-image: url(../asset/img/product02.jpg);
+  
 }
 .best_product .right_box ul li:nth-child(3){
   background-image: url(../asset/img/product03.jpg);
