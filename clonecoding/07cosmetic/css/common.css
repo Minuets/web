@@ -110,7 +110,7 @@ header .fix .gnb>ul>li>ul.sub{
   font-weight: 200;
   margin-block-start: 20px;
 }
-header .fix .gnb>ul>li>ul.sub li{
+header .fix .gnb>ul>li>ul.sub>li{
   border-right: 1px solid var(--w-color);
   padding-inline: 1rem;
 }
