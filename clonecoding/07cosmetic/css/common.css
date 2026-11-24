@@ -39,7 +39,7 @@
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
-body .rock{
+body.rock{
   overflow: hidden;
 }
 ::selection{
@@ -59,7 +59,65 @@ header .fix{
 header.on .fix{
   right: 0;
 }
-
+header .fix .img_box{
+  flex: 1;
+  background: url(../asset/img/fix_imgbox.jpg) center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--main-yellow-l);
+  font-size: 2rem;
+  gap: 20px;
+}
+header .fix .img_box p{
+  color: #333;
+  font-family: var(--Playfair);
+  font-size: 3.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+header .fix .gnb{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-rpink);
+  color: var(--w-color);
+}
+header .fix .gnb>ul{
+  width: 80%;
+  height: 80%;
+  flex-direction: column;
+}
+header .fix .gnb>ul>li{
+  flex: 1;
+  align-content: center;  /* 2줄이 아니더라도 중앙정렬 가능 */
+  transform: translateY(100px);
+  transition: 1s;
+  /* transition-delay: 0.2s; */
+}
+header.on .fix .gnb>ul>li{
+  transform: translateY(0);
+}
+header .fix .gnb>ul>li>a{
+  font-size: 5rem;
+  font-family: var(--Roboto-serif);
+}
+header .fix .gnb>ul>li>ul.sub{
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-block-start: 20px;
+}
+header .fix .gnb>ul>li>ul.sub li{
+  border-right: 1px solid var(--w-color);
+  padding-inline: 1rem;
+}
+header .fix .gnb>ul>li>ul.sub li:last-child{
+  border-right: 0;
+  padding-inline-end: 0;
+}
 .inner {
   width: 95%;
   max-width: 1700px;
