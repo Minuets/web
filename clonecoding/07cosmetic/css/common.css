@@ -39,14 +39,17 @@
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
-body.rock{
+
+body.rock {
   overflow: hidden;
 }
-::selection{
+
+::selection {
   background: var(--main-orange-l);
   color: var(--w-color);
 }
-header .fix{
+
+header .fix {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -56,10 +59,12 @@ header .fix{
   background: var(--main-pink);
   transition: .6s;
 }
-header.on .fix{
+
+header.on .fix {
   right: 0;
 }
-header .fix .img_box{
+
+header .fix .img_box {
   flex: 1;
   background: url(../asset/img/fix_imgbox.jpg) center/cover;
   display: flex;
@@ -71,14 +76,16 @@ header .fix .img_box{
   font-size: 2rem;
   gap: 20px;
 }
-header .fix .img_box p{
+
+header .fix .img_box p {
   color: #333;
   font-family: var(--Playfair);
   font-size: 3.7rem;
   font-weight: 600;
   line-height: 1.2;
 }
-header .fix .gnb{
+
+header .fix .gnb {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -86,45 +93,54 @@ header .fix .gnb{
   background: var(--main-rpink);
   color: var(--w-color);
 }
-header .fix .gnb>ul{
+
+header .fix .gnb>ul {
   width: 80%;
   height: 80%;
   flex-direction: column;
 }
-header .fix .gnb>ul>li{
+
+header .fix .gnb>ul>li {
   flex: 1;
-  align-content: center;  /* 2줄이 아니더라도 중앙정렬 가능 */
+  align-content: center;
+  /* 2줄이 아니더라도 중앙정렬 가능 */
   transform: translateY(100px);
   transition: 1s;
   /* transition-delay: 0.2s; */
 }
-header.on .fix .gnb>ul>li{
+
+header.on .fix .gnb>ul>li {
   transform: translateY(0);
 }
-header .fix .gnb>ul>li>a{
+
+header .fix .gnb>ul>li>a {
   font-size: 5rem;
   font-family: var(--Roboto-serif);
 }
-header .fix .gnb>ul>li>ul.sub{
+
+header .fix .gnb>ul>li>ul.sub {
   font-size: 1.2rem;
   font-weight: 200;
   margin-block-start: 20px;
 }
-header .fix .gnb>ul>li>ul.sub>li{
+
+header .fix .gnb>ul>li>ul.sub>li {
   border-right: 1px solid var(--w-color);
   padding-inline: 1rem;
 }
-header .fix .gnb>ul>li>ul.sub li:last-child{
+
+header .fix .gnb>ul>li>ul.sub li:last-child {
   border-right: 0;
   padding-inline-end: 0;
 }
+
 .inner {
   width: 95%;
   max-width: 1700px;
   margin-inline: auto;
 }
 
-header{
+header {
   width: 100%;
   height: 80px;
   position: fixed;
@@ -132,62 +148,75 @@ header{
   top: 0;
   z-index: 10;
 }
-header.sc{
+
+header.sc {
   backdrop-filter: blur(10px);
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
 }
-header .inner{
+
+header .inner {
   height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   color: var(--w-color);
 }
-header h1{
+
+header h1 {
   font-size: 1.8rem;
   text-transform: capitalize;
 }
-header ul{
+
+header ul {
   display: flex;
 }
-nav{
+
+nav {
   width: 850px;
   font-size: 1.2rem;
 }
+
 header.on h1,
 header.on nav,
 header.on .lang,
 header.sc nav,
-header.sc .lang{
+header.sc .lang {
   display: none;
 }
-nav ul li{
+
+nav ul li {
   flex: 1;
   text-align: center;
 }
-.lang ul{
+
+.lang ul {
   gap: 10px;
   font-weight: 200;
 }
-.lang ul li{
+
+.lang ul li {
   border-right: 1px solid var(--w-color);
   padding-right: 10px;
 }
-.lang ul li:last-child{
+
+.lang ul li:last-child {
   border-right: 0;
 }
-.ham{
+
+.ham {
   width: 40px;
   height: 40px;
   cursor: pointer;
   border-radius: 50%;
   position: relative;
 }
-header.on .ham{
+
+header.on .ham {
   border: 1px solid var(--w-color);
   margin-left: auto;
 }
-.ham ul{
+
+.ham ul {
   flex-direction: column;
   justify-content: space-between;
   width: 26px;
@@ -195,68 +224,79 @@ header.on .ham{
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-39%,-39%);
+  transform: translate(-39%, -39%);
 }
-.ham ul li{
+
+.ham ul li {
   width: 100%;
   height: 1px;
   background: var(--w-color);
   transform-origin: left top;
   transition: .6s;
 }
-.ham ul li:nth-child(2){
+
+.ham ul li:nth-child(2) {
   width: 70%;
 }
-header.on .ham ul li{
+
+header.on .ham ul li {
   transform: rotate(45deg);
   margin-right: -1px;
 }
-header.on .ham ul li:nth-child(2){
+
+header.on .ham ul li:nth-child(2) {
   display: none;
 }
-header.on .ham ul li:nth-child(3){
+
+header.on .ham ul li:nth-child(3) {
   transform: rotate(-45deg);
   margin-left: -1px;
 }
 
 /* footer */
-footer{
+footer {
   height: 210px;
   color: #999;
   background: #1a1a1a;
 }
-footer .inner{
+
+footer .inner {
   height: 80%;
   display: flex;
   align-items: center;
 }
-footer .inner .logo{
+
+footer .inner .logo {
   font-size: 2rem;
   margin-right: 30px;
 }
-footer .inner ul.list li{
+
+footer .inner ul.list li {
   float: left;
   padding: 0 10px;
   line-height: 1;
   margin-bottom: 10px;
   border-right: 1px solid #999;
 }
-footer .inner ul.list li:nth-child(2n+1){
+
+footer .inner ul.list li:nth-child(2n+1) {
   clear: both;
 }
+
 footer .inner ul.list li:nth-child(2n),
-footer .inner ul.list li:last-child{
+footer .inner ul.list li:last-child {
   border-right: 0;
 }
 
-footer .inner ul.sns{
+footer .inner ul.sns {
   margin-left: auto;
   display: flex;
   gap: 20px;
   font-size: 1.5rem;
   align-items: center;
 }
-footer .bottom{
+
+footer .bottom {
   height: 20%;
   display: flex;
   justify-content: center;
